@@ -1,0 +1,5 @@
+1. Arvix Sanity : Similar  Project. Already forked on girhub.
+	Link: https://arxiv-sanity.com
+
+2. https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131
+	Details: ICLR 2017 vs arxiv-sanity
