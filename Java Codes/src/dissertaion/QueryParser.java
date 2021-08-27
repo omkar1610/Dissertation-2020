@@ -78,6 +78,3 @@ public class QueryParser {
 		return queries;
 	}
 }
-
-//14.139.222.93
-//12ta gnat proshno
