@@ -29,15 +29,15 @@ public class CreateRdFile {
 	    System.out.println("Total XML files: "+fileCount);
 
 //		-------------------------Read each XML file and get Cluster_id and context-----------------------------------------------------
-//	    File[] files = directory.listFiles();
-//	    Integer count=0;
-//	    for(File file:files) {
-//	    	getDataFromXml(file.getAbsolutePath().toString());
-//	    	count++;
-//	    	if(count%1000==0) {
-//	    		System.out.println("Files completed: " + count + " out of " + fileCount);
-//	    	}
-//	    }
+	    File[] files = directory.listFiles();
+	    Integer count=0;
+	    for(File file:files) {
+	    	getDataFromXml(file.getAbsolutePath().toString());
+	    	count++;
+	    	if(count%1000==0) {
+	    		System.out.println("Files completed: " + count + " out of " + fileCount);
+	    	}
+	    }
 	    
 //	    time started = 1:07PM
 //	    time = 5:40PM, completed = 516000
@@ -51,18 +51,18 @@ public class CreateRdFile {
 
 //		-------------------------Create merged file from each of those cluster_id files-----------------------------------------------------
 
-//	    BufferedWriter out = new BufferedWriter(new FileWriter("D:\\develop\\Dissertation-2020\\data\\rd_file", true));
-//	    String[] files = directory.list();
-//	    Integer count=0;
-//	    for(String fileName:files) {
-//	    	String line = fileName + "," + getLine("D:\\develop\\Dissertation-2020\\data\\file_for_each_cluster_id\\" + fileName) + "\n";
-//	    	out.write(line);
-//	    	count++;
-//	    	if(count%10000==0) {
-//	    		System.out.println("Cluster IDs completed: " + count + " out of " + fileCount);
-//	    	}
-//	    }
-//	    out.close();
+	    BufferedWriter out = new BufferedWriter(new FileWriter("D:\\develop\\Dissertation-2020\\data\\rd_file", true));
+	    String[] files = directory.list();
+	    Integer count=0;
+	    for(String fileName:files) {
+	    	String line = fileName + "," + getLine("D:\\develop\\Dissertation-2020\\data\\file_for_each_cluster_id\\" + fileName) + "\n";
+	    	out.write(line);
+	    	count++;
+	    	if(count%10000==0) {
+	    		System.out.println("Cluster IDs completed: " + count + " out of " + fileCount);
+	    	}
+	    }
+	    out.close();
 
 //	    time started = 7:12PM
 //	    time = 11:00PM, completed = 1,130,000
